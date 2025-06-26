@@ -1,12 +1,12 @@
 # Module11-Capstone2(What drives the price of a car?)
 This is the Practical Project Part of AI &amp; ML Course to create a Model
-####### Link to the Project ([https://github.com/rajeevkmenon4u/Module5-Capstone1/tree/main](https://github.com/rajeevkmenon4u/Module11-Capstone2))
+#### Link to the Project ([https://github.com/rajeevkmenon4u/Module5-Capstone1/tree/main](https://github.com/rajeevkmenon4u/Module11-Capstone2))
 ## Business Understanding
-  #The Problem: What type of used cars are in demand in a Car Dealership.
-  #The Current State: Currently have all type of cars are stocked and purchased by the dealer.
-  #The Impact: This can helps the dealership to understand what value the buyer sees in the used car.
-  #The Desired Outcome: Reduce the cost of inventory and help customer of what they want.
-  #The Benefit: Improved customer satisfaction and reduced operational costs.Imagine driving through town and a coupon is delivered to your cell phone for a restaurant near where you are driving. Would you accept that coupon and take a short detour to the restaurant? 
+  The Problem: What type of used cars are in demand in a Car Dealership.\
+  The Current State: Currently have all type of cars are stocked and purchased by the dealer.\
+  The Impact: This can helps the dealership to understand what value the buyer sees in the used car.\
+  The Desired Outcome: Reduce the cost of inventory and help customer of what they want.\
+  The Benefit: Improved customer satisfaction and reduced operational costs.
 ## Data Analysis
    ###### Analysing the data and identfying the anamolies/ missing data 
      Below are the list of columns that has maximum missing data
