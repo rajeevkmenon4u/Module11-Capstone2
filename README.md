@@ -6,59 +6,83 @@ This is the Practical Project Part of AI &amp; ML Course to create a Model
   The Current State: Currently have all type of cars are stocked and purchased by the dealer.\
   The Impact: This can helps the dealership to understand what value the buyer sees in the used car.\
   The Desired Outcome: Reduce the cost of inventory and help customer of what they want.\
-  The Benefit: Improved customer satisfaction and reduced operational costs.
-## Data Analysis
+  The Benefit: Improved customer satisfaction and reduced operational costs for the dealer.
+## Data Analysis & Cleaning 
    ###### Analysing the data and identfying the anamolies/ missing data 
      Below are the list of columns that has maximum missing data
-     + car---:12576
-     + CoffeeHouse---:217
-     + Restaurant20To50---:189
-     + CarryAway---:151
-     + RestaurantLessThan20:---130
-     + Bar:---107
+     #Percentage of data missing in each column
+     + size	---:71.77%
+     + cylinders---:41.62%
+     + condition---:40.79%
+     + VIN---:37.73%
+     + drive---:30.59%
+     + paint_color:---30.50%
+     + type:---21.75%
    ###### Graphical Representation
-   ![image](https://github.com/user-attachments/assets/07787ac4-a175-4cd6-bf93-1e90bad8b1c1)
+   ![image](https://github.com/user-attachments/assets/4824df38-1a46-4748-966e-c469ba42fb43)
     
-   #### Results / steps for Missing data
-       Column Car has the maximum missing data as it is not used anywhere in the analysis we are ignoring the data
-       Rest of the columns has the same ratio of missing data, hence it will not impact our analysis
+   #### High level anaylis of price of cars
+       Pricing Range check of cars from the dataset provided
        
-       CoffeeHouse:---0.017108
-       Restaurant20To50:---0.014901
-       CarryAway:---0.011905
-       RestaurantLessThan20:---0.010249
-       Bar:---0.008436
-
-## Various Scenarios that are considered for Analayis 
-# 1. What proportion of the total observations chose to accept the coupon?
-###### Analysis-Findings
-        
-      Y:---coupon	
-      0:---0.431567
-      1:---0.568433
-### Hypothesis      
-    Based on the analysis we can see that 57 % accepted and 43% rejected
-# 2. bar plot to visualize the coupon column
-###### Analysis-Findings
-  
-| coupon        | Y             | Count  |
-| ------------- |:-------------:| -----:|
-| Bar           | 0             |  1190 |
-|               | 1             |   827 |
-| Carry out & Take away | 1      |   1760|
-|  |   0     |   633|
-|  Coffee House	 | 0      |   2001|
-| | 1      |   1995|
-| Restaurant(20-50)	 |   0     |   834|
-|  	 |1      |   658|
-| Restaurant(<20) |   1     |   1970|
-|  	 |0      |   816|
+       Pricing ranges of car from
+            Avg :- 75K which looks large ????
+       25% are in the 6K price range, 50% in the Range of 13K, 26K in the range of 75%
+       Avg doesnt loook correct because something is high??
+       Max is 3.7 million need to see what the car is ???
 
 ###### Graphical Representation
-![image](https://github.com/user-attachments/assets/a8ec9a5f-24ba-4950-a884-ebc1b8680e02)
-![image](https://github.com/user-attachments/assets/f95ac9a5-b627-4c6a-ab54-d624f40a4a0b)
+![image](https://github.com/user-attachments/assets/dbeb0ae7-2bcb-4d4c-85ea-01e02028dbb1)
+### Hypothesis
+There are few cars who price are 3 million and above
+There are few cars who price are between 1 million and above
+Majority are in the less then 50K
 
-### Hypothesis 
+## Price Detail Analysis  
+# 1. What proportion of cars are less than 50,000?
+###### Analysis-Findings
+        
+      1:---413,839 cars data are less than 50k	
+      2:---12,344 cars data are of 50k and less than 100K
+      3:-- 6,20 cars data are of 100 K and above and less than 300 K
+      4:-- 77 cars data are of 300K and above
+      5:-- 60 cars data are of 1Million and above
+![image](https://github.com/user-attachments/assets/a545f23a-6da4-4639-9809-4bd7aa915aac)
+     
+![image](https://github.com/user-attachments/assets/9599c775-cece-4bd8-aaa4-ea323e82069e)
+
+![image](https://github.com/user-attachments/assets/c07a075d-4f9b-4a66-a17c-453773815f12)
+      
+### Hypothesis      
+    Data of not much use 1. model 2, VIN 3. size
+    Data useful are   1. fuel ( gas other disel),  transmission ( Auto, manual, other ) 2. title_status ( clean , salvage) 3. drive (rwd, 4wd, fwd) 4. condition (good excellent . salvage) 5. cylinders 6, manufacturer
+    Data useful ok    1. color 2. type ( truck , pick , SUV)
+    ### Based on general knowledge
+    What factors depends on the car value ( Year, transmission, Fuel, odometer, condition , cylinders, title ) will decide the value of the car
+    These factors will impact little bit paint, drive, type,  and others
+    
+# Data Preparation
+###### Removing 0 & NUll Values & cars Price > 1 M 
+ Total = 426,880
+ Total after removing price 0 = 393,985
+ 32,895 rows of 0 removed
+ Total records of 393,932 remaining After removing price more then 1 M
+ 
+![image](https://github.com/user-attachments/assets/a04760cd-50c8-4a02-82e8-5ab5cd8c6a4d)
+
+### Analysis Raw data & after removing 0 & NULL Values & cars Price > 1 M  
+
+## Pricing ranges of car from Earlier 
+            Avg :- 75K which looks large ????
+       25% are in the 6K price range, 50% in the Range of 13K, 26K in the range of 75%
+       Avg doesnt loook correct because something is high??
+       Max is 3.7 million need to see what the car is ???
+
+## Pricing ranges of car after Removing 0 & NUll Values & cars Price > 1 M
+          Avg :- 18.9K which has come down
+       25% are in the 7K price range, 50% in the Range of 15K, 27K in the range of 75%
+       Avg doesnt loook correct because something is high??
+       Max is 1 million need to see what the car is ???
+## What more data can be removed  
   1. Maximum acceptance is for "coffehouse" and "Resturant<20"
   2. 3rd place if "Carry out & Takeaway"
   3. For CoffesHouse the Rejection rate is also high 
