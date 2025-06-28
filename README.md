@@ -29,6 +29,7 @@ This is the Practical Project Part of AI &amp; ML Course to create a Model
        25% are in the 6K price range, 50% in the Range of 13K, 26K in the range of 75%
        Avg doesnt loook correct because something is high??
        Max is 3.7 million need to see what the car is ???
+![image](https://github.com/user-attachments/assets/945cf5cd-293d-4d25-bd28-6e6d48d16358)
 
 ###### Graphical Representation
 ![image](https://github.com/user-attachments/assets/dbeb0ae7-2bcb-4d4c-85ea-01e02028dbb1)
@@ -43,7 +44,7 @@ Majority are in the less then 50K
         
       1:---413,839 cars data are less than 50k	
       2:---12,344 cars data are of 50k and less than 100K
-      3:-- 6,20 cars data are of 100 K and above and less than 300 K
+      3:-- 620 cars data are of 100 K and above and less than 300 K
       4:-- 77 cars data are of 300K and above
       5:-- 60 cars data are of 1Million and above
 ![image](https://github.com/user-attachments/assets/a545f23a-6da4-4639-9809-4bd7aa915aac)
@@ -82,24 +83,51 @@ Majority are in the less then 50K
        25% are in the 7K price range, 50% in the Range of 15K, 27K in the range of 75%
        Avg doesnt loook correct because something is high??
        Max is 1 million need to see what the car is ???
+![image](https://github.com/user-attachments/assets/28f4477a-6a9d-463a-84db-39e6c4524ee0)
+       
 ## What more data can be removed  
-  1. Maximum acceptance is for "coffehouse" and "Resturant<20"
-  2. 3rd place if "Carry out & Takeaway"
-  3. For CoffesHouse the Rejection rate is also high 
+  1. Three Freatures ( Cylinders, Drive & Condition Missing data)
+![image](https://github.com/user-attachments/assets/2ccfe4ec-d65c-480e-a5f5-4c6ce33afd06)
+  2. Null Value comparison before cleaning data
+![image](https://github.com/user-attachments/assets/eb67aa9c-68b1-42c2-a7d8-6c172a0cfd80)
 
-# 3. Use a histogram to visualize the temperature column.
-###### Analysis-Findings
-  Of the overall coupon data of 12K, Temp 80 contibuties to 6.5k of the data, 4K data for Temp55 and remainik 2k Data to Temp30
-     Temperature	
-      30	0.531088
-      55	0.536719
-      80	0.600337
+3. Null Value comparison After cleaning data
+    
+![image](https://github.com/user-attachments/assets/80396674-e92d-488c-bfc7-9fd5964f6e46)
 
+## Pricing ranges of car from Earlier 
+            Avg :- 75K which looks large ????
+       25% are in the 6K price range, 50% in the Range of 13K, 26K in the range of 75%
+       Avg doesnt loook correct because something is high??
+       Max is 3.7 million need to see what the car is ???
+
+## Pricing ranges of car after Removing 0 & NUll Values & cars Price > 1 M
+          Avg :- 18.9K which has come down
+       25% are in the 7K price range, 50% in the Range of 15K, 27K in the range of 75%
+       Avg doesnt loook correct because something is high??
+       Max is 1 million need to see what the car is ???
+## Fairly the same after removing 0 Odometer entries
+![image](https://github.com/user-attachments/assets/3381da93-d4f9-4262-9782-a48808556eb6)
+
+## Car Price Distribution & Spread
+![image](https://github.com/user-attachments/assets/c3736afa-c1c9-4e6b-ac1f-a574f010431e)
+
+## Car Manufacturer Distribution
+![image](https://github.com/user-attachments/assets/0cd76e13-ec39-441b-9c3a-647e50fadc59)
+     
+# Price & 6 features (year , odometer , fuel,  cylinders , condition , drive, transmission , title_status) analysis
+## 1. Analysis-Findings for Year
+  Of the overall cars of 380,280 
+  Count of cars > 1980 = 372,114 
+  Count of cars < 1980 = 8431
+     
 ###### Graphical Representation
-![image](https://github.com/user-attachments/assets/1f332d0f-d7f1-400a-846f-8ff63cae3b55)
-![image](https://github.com/user-attachments/assets/571bbbdd-930a-47d8-8e3e-ae6d861d1230)
-![image](https://github.com/user-attachments/assets/29ff00a9-dad1-4244-b10d-17501ed2af3d)
-### Hypothesis 
+![image](https://github.com/user-attachments/assets/2bc972a8-d10f-4539-b605-bab93a845554)
+
+![image](https://github.com/user-attachments/assets/50ba8824-90ea-4d07-993e-bd743ed8edc9)
+
+## 2. Analysis-Fuel & Price 
+
   1. Top 3 acceptance of coupons cateogry ( All temp 80)
       1. Coffee house
       2. Restaurant(<20)
