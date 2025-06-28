@@ -238,7 +238,7 @@ Majority are in the less then 50K
 
 ## Evaluation 
 ## RMSE Comparison
-Price Prediction with Fuel & Drive categorical values = 19,037.70 K
+Price Prediction with (Fuel & Drive categorical values)  = 19,037.70 K
 
 ![image](https://github.com/user-attachments/assets/ab31d3e8-6062-40f9-912b-583989815e79)
 # with Fuel & Drive ( Train & Test Prediction Performance)
@@ -255,8 +255,8 @@ Mean :- #price = 19,037.70 -- Off by 5.8K
   
      
 ## Results / Observation
-   1. Passenger with age of 26 has good acceptance rate with all 3 (travelling with friends , partner or alone)
-   2. passenger who are travelling alone go to the cheaper resturant for the age of 21.
-   3. Passengers with the age group of 50 pLus has a 45% acceptance
+   1. In this case all 3 models worked almost similar. 
+   2. The price prediction was not that good and not close to the actual price  
+   3. Not a good model as the error in prediction was 5K for each of the models
       
 
