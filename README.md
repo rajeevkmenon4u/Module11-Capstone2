@@ -127,116 +127,136 @@ Majority are in the less then 50K
 ![image](https://github.com/user-attachments/assets/50ba8824-90ea-4d07-993e-bd743ed8edc9)
 
 ## 2. Analysis-Fuel & Price 
+![image](https://github.com/user-attachments/assets/fdd95c8e-251a-4241-9f73-de2d27e2bd64)
 
-  1. Top 3 acceptance of coupons cateogry ( All temp 80)
-      1. Coffee house
-      2. Restaurant(<20)
-      3. Carry out & Take away "Carry out & Takeaway"
-  2. Top 3 Rejection of coupons cateogry
-      1. Coffee house - Temp 80
-      2. Restaurant(<20)  - Temp 55
-      3. Bar - Temp 55
-     
-# 4. Investigating the Bar Coupons
-###### Analysis-Findings
-
-|  Y         | coupon        | Count  |	
-| ---------- |:-------------:| ------:|
-| 0 |	Coffee House |2001|
-|   |	 Bar	|	1190
-|   |	Restaurant(20-50) |		834
-|  |	Restaurant(<20) |		816
-|   |	Carry out & Take away	 |	633
-| 1	|	Coffee House|		1995
-|   |	 Restaurant(<20)	 |	1970
-|   |	Carry out & Take away	 |	1760
-|   |	 Bar |		827
-|   |	 Restaurant(20-50) |		658
-
-0 Bar	9.38 - Rejection
-1 Bar 6.52 - Acceptance
+  1. Greater than year 1980 - Ratio of cars
+      1. gas cars  83.96% and  diesel cars are at 6.85% hybrid  1.27% &  electric 0.42%
+      2. Price Range
+      3. Diesel cars 33,766.26 , electric  25,698.23 , gas 16,951.67 , hybrid 15,539.89 other 27997.98
+  2. Before year 1980
+      1. gas 96.59% and diesel 1.12% , electric 0.13%
+      2. Price Range
+      3. diesel 11,177.46,  electric  6731.72 , gas  18,298.07 other - 18,628.20
+## where there Electic cars before 1980 ??? - Anamoly  
 ### Hypothesis 
- So overall 6 % accepted the Bar coupons & 9% rejected Bar coupons
+ So overall gas cars less expensive after year 1980 , where as disel cars were less expensive before 1980
  
-# 5. Compare the acceptance rate between those who went to a bar 3 or fewer times a month to those who went more.
-###### Analysis-Findings
-| coupon     | Bar        | Count  |	 Mean  |
-| ---------- |:----------:| ------:| ------:|
-| Bar |	1~3 | 397| 0.647355|
-| Bar |	4~8 | 150| 0.780000|
-| Bar |	gt8	| 49| 0.734694|
-| Bar |	less1 | 570| 0.443860|
-| Bar |	never | 830| 0.187952|
-###### Graphical Representation
-![image](https://github.com/user-attachments/assets/edbe4c56-465d-4c44-b347-6a93af77ebd4)
+# 3. Analysis-Cylinders & Price
+![image](https://github.com/user-attachments/assets/d5c5b065-dbfb-48e1-8c57-d54a00ab4d32)
+
+  1. Greater than year 1980 
+      1. 41% contains missing cylinders data & 6 cylinders  22.58% -  4 cylinders    18.43% -  8 cylinders     16.31%
+      2. Price Range
+      3. 10 cylinders    22476.702882 , 12 cylinders    57,354.994819 ,  3 cylinders   13074.536332 4 cylinders     11060.367327
+  2. Before year 1980
+      1. 8 cylinders     46.389678 %  - 32.776989% contains missing ,  & 6 cylinders  10.58% -  4 cylinders    9.2%
+      2. Price Range
+      3. 10 cylinders    20,000.000000 , 12 cylinders    15,500.000000 ,  3 cylinders    7541.666667  4 cylinders  - 11,979.129321
 
 ### Hypothesis 
-  The acceptance rate is more when compared to passengers who went to Bar less than 3 times or lesser. it is around 64%.
-  The acceptance rate is 78% to the passengers who when 4-8 times but the count is 150 which is less than half to the count of passengers who went to bar 1~3 times
-  The acceptance rate is 73% when they went more than 8 times but the count is very less on 50.
-# 5. Compare the acceptance rate between drivers who go to a bar more than once a month and are over the age of 25 to the all others. Is there a difference?
-###### Analysis-Findings
-![image](https://github.com/user-attachments/assets/9bca9750-d132-4253-b32c-2a35c451ff87)
+ So overall price gets reduces with less cylinders
+ 
+# 4. Analysis-Condition & Price
+![image](https://github.com/user-attachments/assets/09fef1ad-ce22-4213-9e92-18394fd472ef)
 
-###### Graphical Representation
-![image](https://github.com/user-attachments/assets/af5694bf-b664-41a3-9e0c-1a942b0bca40)
-![image](https://github.com/user-attachments/assets/dfa47b38-3f74-4f2e-8bd3-5e151b0c17c0)
+ 1. Greater than year 1980 
+      1. Missing    38.69%  good         31.04% excellent    22.97%
+      2. Price Range
+      3. Missing      20005.54,  excellent    15,261.95, fair          3878.65,  good         21,157.20,  like new     18997.15,   new          26928.86
+  2. Before year 1980
+      1. Missing      30.10%  good         29.46%  excellent    25.48%
+      2. Price Range
+      3. Missing      18696.88 , excellent    25,680.73 , fair          5773.23, good         12,898.81,   like new     33225.74 , new          35211.00
+### Hypothesis 
+  More than 30 % data are missing condition data
+  Good cars are expensive than Excellent condition cars after 1980 ??? 
+  Excellent cars are expensive than good condition cars before 1980 - Make sense
+    
+# 5. Analysis-Drive & Price
+![image](https://github.com/user-attachments/assets/1f917f5a-dc88-4ebf-be2d-f1daa3fe9741)
+
+1. Greater than year 1980 
+      1. 4wd        30.965164  Missing    30.021753 fwd        25.602994  rwd        13.410089
+      2. Price Range
+      3. 4wd        23570.34 Missing    18640.59 fwd        12580.87 rwd        21207.17
+  2. Before year 1980
+      1. rwd        51.006155 Missing    39.287405 4wd         7.054924 fwd         2.651515
+      2. Price Range
+      3. 4wd        14675.04 Missing    19323.90 fwd        15816.58 rwd        18015.10
+### Hypothesis 
+  More than 30 % data are missing drive data
+  4wd are expensive when compared to fwd & rwd.
+
+
+# Remove missing data from drive , condition and other columns and perform one hot encoding for ( drive & Gas)
+## Data Greater than 1980
+  ![image](https://github.com/user-attachments/assets/e71e86fe-db98-4721-8ac7-6c87a4c62729)
+## Data Less than 1980
+![image](https://github.com/user-attachments/assets/434ba04c-57ee-4881-83c0-dbb5bddfe8e4)
+
+# Data Modelling
+## Correlation for Data Grreater than 1980  
+  ![image](https://github.com/user-attachments/assets/7f810c86-038f-46d3-ae32-8556df285559)
+# Heat Map - Greater than year 1980 
+![image](https://github.com/user-attachments/assets/1d46ded2-79ee-4dad-99cc-e8bdb18c94ca)
+# Correlation - Greater than year 1980 
+![image](https://github.com/user-attachments/assets/e2aa55fd-e4c0-4c72-9b45-e0e64f82b00d)
+
+
+## Correlation for Data Less than 1980  
+ ![image](https://github.com/user-attachments/assets/8ac6351f-dbc3-4834-98e4-5bbad54bdc40)
+# Heat Map - Less than year 1980 
+![image](https://github.com/user-attachments/assets/b8081515-3e47-474a-809c-c33b77584374)
+# Correlation - Less than year 1980 
+![image](https://github.com/user-attachments/assets/3aa90ff4-29d7-4124-a8be-618bbd68d4e2)
 
 ### Hypothesis 
-  1. Age 50 PLus has maximum count of 1050 and 45% acceptance when compared to 21 years age group of count 849 and 55%
-  2. People of the Age of 21 went to Bar 1`3 more times when compared to any other age category
-  3. Age of 21 people went to BAR "less 1 " compared to any other group
-
-# 6. Use the same process to compare the acceptance rate between drivers who go to bars more than once a month and had passengers that were not a kid and had occupations other than farming, fishing, or forestry.
-###### Analysis-Findings
-  ![image](https://github.com/user-attachments/assets/ea0cc811-98d2-461e-8b47-cc5ac0b878e0)
-
-###### Graphical Representation
-  ![image](https://github.com/user-attachments/assets/5e719207-1ce0-4025-9126-76c6216ae87b)
-  ![image](https://github.com/user-attachments/assets/a802e57c-75f0-4f7e-abcf-82cae296b40c)
-  ![image](https://github.com/user-attachments/assets/8a35cd8c-eaec-4817-91b0-24625154b936)
-
-### Hypothesis 
-  1. Based on the data we can see the people who are unemplyeed and who are alone goes to a Bar 1-3 times with a acceptance rate of 62%
-  2. Based on the data we can see the people who are unemplyeed and who are with frimnds goes to a Bar 4-8 times with a acceptance rate of 61%
-  3. Based on the data we can see the people who are unemplyeed and who are with frimnds goes to a Bar 1-3 times with a acceptance rate of 85%
-  4. People who are working in managemnet also has acceptnace rate of 56% & 62% even if they are alone or with frinnds . they go 1-3 & 4-8
-  5. Top 10 Jobs that go bar more often are Unemployed , Student, Computer & Mathematical, Management, Sales & Related, Office & Administrative Support	, Business & Financial	, Education&Training&Library
-  6. Passengers traveling alone goes to the bar more often
-  7. what we find is passenger who are Alone and with occupation "unemployed" goes to the bar (190)
+  1. Based on the above it indicates that
+  2. Drive_rwd & drive_4wd, Fuel_other & Fuel_other has positive impact on prices for year > 1980
+  3. Drive_fwd , fuel_gas, odometer and fuel_hybrid has nagative impact on price for year > 1980
+  4. Drive_rwd & fuel_gas has positive impact on prices for year < 1980
+  5. Drive_fwd , fuel_gas,fuel_disel, drive_4wd , odometer , fuel_other and fuel_hybrid has nagative impact on price for year < 1980
   
-# 6. Compare the acceptance rates between those drivers who:
-     go to bars more than once a month, had passengers that were not a kid, and were not widowed OR
-     go to bars more than once a month and are under the age of 30 OR
-     go to cheap restaurants more than 4 times a month and income is less than 50K.
-###### Analysis-Findings
- ![image](https://github.com/user-attachments/assets/c6974b73-6165-4315-abc2-0e29eb4c234e)
-###### Graphical Representation 
-  ![image](https://github.com/user-attachments/assets/3a51076b-cb3d-4ebb-8ed9-80e3153416dd)
-  ![image](https://github.com/user-attachments/assets/3617e7b2-b209-4b89-94ed-c75e6083188d)
-  ![image](https://github.com/user-attachments/assets/0e97122f-e52b-41f1-9be0-d1d7c137d6a9)
   
+# Scaling & Applying models( Linear, Ridge & Lasso)
+# Analysis
+ ![image](https://github.com/user-attachments/assets/71c36cbd-a766-444a-a2d1-0b6f4421b769)
+ ![image](https://github.com/user-attachments/assets/9de2448b-b688-4442-8d03-496ce1d845d5)
+ ![image](https://github.com/user-attachments/assets/c56360a7-eda6-4dd8-8bb1-e13cba1bd43e)
+
+## Prediction againt Traindata 
+![image](https://github.com/user-attachments/assets/652a23db-b313-40df-9136-ebb35b1eec87)
+![image](https://github.com/user-attachments/assets/43f9bc16-477a-4a20-a631-033f25761541)
 ### Hypothesis 
-  1. passenger with friends who are aged 21 has acceptance rate of 80% but the count is vey less so it has to be ignored
-  2. passenger with the age below 21 does not go to the bar that often
-  3. passenger with age of 26 has good acceptance rate with all 3 (travelling with friends , partner or alone)
-  4. passenger who are travelling alone go to the cheaper resturant more often and the acceptance ratio is 78% for the age of 21 and they have gone to restutnat many times.
+  1. Not a good prediction
+
+## Prediction againt Testdata 
+![image](https://github.com/user-attachments/assets/5695c173-05a9-4d7d-9fee-4eef846ffffc)
+
+### Hypothesis 
+  1. Not a good prediction
+
+## Evaluation 
+## RMSE Comparison
+Price Prediction with Fuel & Drive categorical values = 19,037.70 K
+
+![image](https://github.com/user-attachments/assets/ab31d3e8-6062-40f9-912b-583989815e79)
+# with Fuel & Drive ( Train & Test Prediction Performance)
+Train 13219.052453	Test :- 13551.160857
+Mean :- #price = 19,037.70 -- Off by 5.8K
+
+## Coefficients Comparison
+  ![image](https://github.com/user-attachments/assets/2381e286-3771-435d-b5b5-d02811f1b250)
+### Hypothesis 
+  1. Fuel_disel, drive_4wd, fuel_other, drive_rwd all has positive impact on price for all the 3 models 
+  2. Fuel hybrid, Fuel_gas, drive_fwd and odometer has negative impact on price for all the 3 models 
+  3. only for fuel_ electic ) both liner & ridge has positive impact , Lasso has negaive impact.
+![image](https://github.com/user-attachments/assets/75d9f7a1-cda6-4b54-a5fb-8a27b3004993)
+  
      
 ## Results / Observation
    1. Passenger with age of 26 has good acceptance rate with all 3 (travelling with friends , partner or alone)
    2. passenger who are travelling alone go to the cheaper resturant for the age of 21.
    3. Passengers with the age group of 50 pLus has a 45% acceptance
       
-# 7. Analysis the acceptance rate of Carryout & Takeaway
-###### Analysis-Findings
-![image](https://github.com/user-attachments/assets/253a6919-9dab-43b8-a87e-efc110928086)
-###### Graphical Representation 
-![image](https://github.com/user-attachments/assets/f7793a4e-3e57-447a-b5c0-ca0e07ae94e8)
-![image](https://github.com/user-attachments/assets/4220be50-6387-43dd-86a6-c8522d1fd413)
 
-### Hypothesis 
- 1. Based on the data you see the acceptance rate for carryout with pasengers travelling alone, or frineds , partner , kids are fairly same
- 2. But the count when passengers travelling with partner & kids are less than 20 when compared to passengers travelling alone , with friends
- 3. Hence partner & kids can be ignored
-
-## Results / Observation
